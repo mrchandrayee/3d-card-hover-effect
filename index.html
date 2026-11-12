@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#242331">
+  <title>3D Card Hover Effect | HTML & CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <h1><span>3D Card Hover Effect</span> Using<br>HTML CSS</h1>
+      <p class="subheading">Move your pointer over a cover to explore the 3D effect.</p>
+    </header>
+
+    <section class="cards" aria-label="3D book cover cards">
+      <article class="card" data-card="dark-rider" tabindex="0" aria-label="The Dark Rider book cover">
+        <div class="wrapper">
+          <img src="./Images/dark_rider-cover.jpg" class="cover-image" alt="The Dark Rider fantasy book cover">
+          <div class="shine"></div>
+        </div>
+        <div class="card-caption">
+          <span class="caption-title">THE DARK RIDER</span>
+          <span class="caption-author">CHRIS MASON</span>
+        </div>
+      </article>
+
+      <article class="card" data-card="force-mage" tabindex="0" aria-label="Force Mage book cover">
+        <div class="wrapper">
+          <img src="./Images/force_mage-cover.jpg" class="cover-image" alt="Force Mage fantasy book cover">
+          <div class="shine"></div>
+        </div>
+        <div class="card-caption">
+          <span class="caption-title">FORCE MAGE</span>
+          <span class="caption-author">ZAO CASS</span>
+        </div>
+      </article>
+    </section>
+
+    <p class="hint">HOVER · MOVE · EXPLORE</p>
+    <footer class="creator">
+      <div class="avatar">S</div>
+      <span>CODING.STELLA</span>
+      <div class="footer-actions">
+        <button type="button" class="footer-action" id="likeBtn" aria-label="Like demo"><span>♥</span><small>LIKE</small></button>
+        <button type="button" class="footer-action" id="saveBtn" aria-label="Save demo"><span>▮</span><small>SAVE</small></button>
+        <button type="button" class="footer-action" id="shareBtn" aria-label="Share demo"><span>↗</span><small>SHARE</small></button>
+      </div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
